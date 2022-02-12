@@ -1,10 +1,6 @@
 name: Copy folder to other branch
 
-on:
-  push:
-    branches: 
-    - main 
-    - 'DEV'
+on: push
 jobs:
   copy:
     name: Copy my folder
