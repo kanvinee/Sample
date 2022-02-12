@@ -14,6 +14,6 @@ jobs:
           git fetch                         # fetch branches
           git checkout PRD      # checkout to your branch
           git pull origin QA
-          git add -A
+          git add .
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
           git push origin PRD # push to remote branch
