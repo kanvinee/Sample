@@ -3,6 +3,7 @@ name: Copy folder to other branch
 on:
   push:
     branches:
+    - DEV
     - 'QA'
           
 
