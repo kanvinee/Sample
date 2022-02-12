@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: copy
         run: |
-          files=$(find $SRC_FOLDER_PATH -type f) # get the file list
+          #files=$(find $SRC_FOLDER_PATH -type f) # get the file list
           git config --global user.name 'Vineetha'
           git config --global user.email 'kanaparthivineetha30@gmail.com'
           git fetch                         # fetch branches
