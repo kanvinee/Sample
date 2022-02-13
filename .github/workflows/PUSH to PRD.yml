@@ -26,7 +26,6 @@ jobs:
            # git config pull.rebase true   # rebase
           #  git config pull.ff only       # fast-forward only
           git pull origin QA
-          #git config pull.ff only 
           git add .
           git commit -m "deploy files"
           git push origin PRD
