@@ -1,11 +1,7 @@
-name: Copying folder to other branch PRD
-
-
 on:
   push:
     branches:
       - main
-      - 'QA'
           
 
 jobs:
