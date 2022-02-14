@@ -1,11 +1,7 @@
-name: Copying folder to other branch PRD
-
-
 on:
   push:
     branches:
       - main
-      - 'QA'
           
 
 jobs:
@@ -21,7 +17,7 @@ jobs:
           git config --global user.name 'vini'
           git config --global user.email 'kanaparthivineetha30@gmail.com'
           git fetch                         # fetch branches
-          git checkout DEV       # checkout to your branch
-          git pull origin main 
+          git checkout PRD       # checkout to your branch
+          git pull origin QA
           git diff-index --quiet HEAD ||  git commit -am "deploy files"
-          git push origin DEV
+          git push origin PRD
